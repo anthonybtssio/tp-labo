@@ -30,7 +30,7 @@ public Souris( int poids, String couleur) {
 
     this.esperanceVie = ESPERANCE_VIE_DEFAUT;
 
-    System.out.println("Une nouvelle souris !");
+    System.out.println("Clone d'une souris !");
 
 }
 
@@ -49,6 +49,39 @@ public Souris(Souris autreSouris) {
 
 }
 
+
+//Méthode toString
+
+public String toString(){
+String description = "Une souris de couleur" + couleur +", de " + age + "ans, et pesant " + poids + " grammes";
+
+if (Souris == clonee){
+
+    description += "";
+}
+return description;
+
+
+}
+
+
+//Deuxième méthode 
+public void viellir(){
+    age ++;
+    
+
+     System.out.println(age);  
+
+} 
+
+//Méthode evolue
+public void evolue(){
+while (age > esperanceVie){
+    viellir();
+}
+
+
+}
 
 
 

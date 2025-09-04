@@ -13,8 +13,8 @@ public class Laboratoire {
         System.out.println(s2);
         System.out.println(s3);
         
-        s1.vieillir();
-        s1.vieillir();
+        s1.viellir();
+        s1.viellir();
         System.out.println(s1);
         
         s1.evolue();
