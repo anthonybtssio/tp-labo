@@ -1,6 +1,6 @@
 public class Souris {
     private static final int AGE_DEFAUT = 0;
-    private static final int ESPERANCE_VIE_DEFAUT = 36;
+    private static final int ESPERANCE_VIE_DEFAUT = 36; // constante 
     private String couleur;
     private int age;
     private int poids;
@@ -54,7 +54,7 @@ public Souris(Souris autreSouris) {
 
 public String toString(){
 String description = "Une souris de couleur" + couleur +", de " + age + "ans, et pesant " + poids + " grammes";
-
+//conditions
 if (Souris == clonee){
 
     description += "";
